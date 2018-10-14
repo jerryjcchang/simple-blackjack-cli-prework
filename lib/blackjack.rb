@@ -53,11 +53,8 @@ def hit?
   prompt_user
   get_user_input
   if get_user_input == "h"
-    deal_card
-    display_card_total
     return total
   else get_user_input == "s"
-    display_card_total
     return total
 end
 end
