@@ -73,5 +73,9 @@ end
 
 def runner
   loop do
+    welcome 
+    initial_round
+    hit?
+  
     
     
