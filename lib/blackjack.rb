@@ -49,11 +49,13 @@ def invalid_command
     puts "Please enter a valid command"
 end
 
-def hit?
+def hit?(card_total)
   prompt_user
-  get_user_input
-  if get_user_input == "h"
-    return total
+  response = get_user_input
+  if response == "h"
+    card_total += deal_card
+  display_card_total(card_total)
+    return card_total
   else get_user_input == "s"
     return total
 end
