@@ -72,10 +72,8 @@ end
 #####################################################
 
 def runner
-  loop do
+  until card_total == 21
     welcome 
     initial_round
     hit?
-  
-    
     
